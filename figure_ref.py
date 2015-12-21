@@ -22,6 +22,10 @@ from bs4 import BeautifulSoup, FeatureNotFound
 from pelican import signals
 from pelican.generators import ArticlesGenerator, PagesGenerator
 
+import sys
+if (sys.version_info[0]>2):
+    unicode = str
+
 __version__ = '0.0.1'
 
 REF_RE = re.compile("\{#\s*(\w+)\s*\}")
