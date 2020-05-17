@@ -72,7 +72,7 @@ def process_content(article):
             if m:
                 figures.append(m.group(1))
                 figure.parent['id'] = m.group(1)
-                new_tag = soup.new_tag("strong")
+                new_tag = soup.new_tag("span")
                 figure.contents[0].replace_with(' ' + caption[m.end():])
                 new_tag.string = "Figure {}:".format(len(figures))
                 figure.insert(0, new_tag)
