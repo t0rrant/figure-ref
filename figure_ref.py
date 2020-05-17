@@ -63,7 +63,7 @@ def process_content(article):
     def format_caption(figure):
         if 'figure' in figure.parent.attrs['class'] and 'id' in figure.parent.attrs:
             figures.append(figure.parent.attrs['id'])
-            new_tag = soup.new_tag("strong")
+            new_tag = soup.new_tag("span")
             new_tag.string = "Figure {}: ".format(len(figures))
             figure.insert(0, new_tag)
         elif figure.parent.name == 'figure':
