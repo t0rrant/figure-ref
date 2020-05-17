@@ -34,12 +34,12 @@ if sys.version_info[0] > 2:
 
 __version__ = '0.1.0'
 
-# creates a group that matches 1 or more word, hyphen or underscore
-REF_NUM_RE = re.compile(r'{#([\w\-_]+)}')
-# creates a group that matches 1 or more word, hyphen or underscore
-REF_RE = re.compile(r'{F#([\w\-_]+)}')
-# creates a group that matches 1 or more word, hyphen or underscore
-LABEL_RE = re.compile(r'^([\w\-_]+) ::')
+# creates a group that matches 1 or more word or hyphen
+REF_NUM_RE = re.compile(r'{#([\w\-]+)}')
+# creates a group that matches 1 or more word or hyphen
+REF_RE = re.compile(r'{F#([\w\-]+)}')
+# creates a group that matches 1 or more word or hyphen
+LABEL_RE = re.compile(r'^([\w\-]+) ::')
 REF_NUM = "<a href='#{}'>{}</a>"
 REF = "<a href='#{}'>Figure {}</a>"
 

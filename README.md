@@ -50,6 +50,9 @@ Both substitutions will act as a link to the figure.
 
 This plugin allows you to have refs in the image caption, just like with LateX
 
+**NOTE:** labels using underscores (_) will be converted to hyphens (-). I recommend trying to avoid labels with 
+underscores or to the change manually when using references.
+
 ### Markdown
 
 **Note that at this time the figureAltCaption is not working, as a figure tag is no longer being generated.**
