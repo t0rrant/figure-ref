@@ -90,6 +90,5 @@ to the figure.
 
 ### Authors
 
-Chris MacMackin <cmacmackin _at_ gmail.com>
-Manuel Torrinha <manuel.torrinha _at_ tecnico.ulisboa.pt>
-
+- Chris MacMackin <cmacmackin _at_ gmail.com>
+- Manuel Torrinha <manuel.torrinha _at_ tecnico.ulisboa.pt>
